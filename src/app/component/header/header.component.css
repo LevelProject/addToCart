@@ -1,0 +1,18 @@
+i {
+    color: #fff;
+    font-size: 30px;
+}
+
+strong {
+    color: #fff;
+    font-size: 30px;
+}
+
+.search-bar {
+    min-width: 500px;
+}
+
+.search-icon {
+    position: absolute;
+    margin-left: 470px;
+}

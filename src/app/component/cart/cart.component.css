@@ -1,0 +1,11 @@
+.card {
+    margin-top: 50px;
+}
+
+.card-body img {
+    width: 300px;
+}
+
+td img {
+    width: 50px;
+}

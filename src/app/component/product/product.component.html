@@ -1,0 +1,63 @@
+<div class="conatiner-fluid card-top">
+    <div class="conatiner d-flex">
+        <div class="item">
+            <a href="">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="https://rukminim1.flixcart.com/image/464/557/k83dlzk0/necklace-chain/g/k/s/ff414-chain-fashion-frill-original-imafq6njx8vnjhkr.jpeg?q=50" alt="" style="width: 52px;">
+                <h6>Jewelery</h6>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+                <h6>Fashion</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+                <h6>Electronic</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList | filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h4 class="title"><b>{{item.title}}</b></h4>
+                <p class="desp">{{item.description}}</p>
+                <p class="price">Price:<strong>₹{{item.price}}</strong> </p>
+                <button class="btn btn-primary" (click)="addToCart(item)">Add to cart</button>
+            </div>
+        </ng-container>
+    </div>
+</div>
+<router-outlet></router-outlet>
